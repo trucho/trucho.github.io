@@ -293,7 +293,7 @@ body {
   right: 8px;
   bottom: 8px;
   z-index: 31;
-  font-family: Helvetica, sans-serif;
+  font-family: Avenir;
   font-size: 12px;
   line-height: 1;
   color: #fff;
@@ -1290,7 +1290,7 @@ body {
   overflow: auto;
   box-sizing: border-box;
   text-align: left;
-  font-family: Helvetica, sans-serif;
+  font-family: Avenir;
   -webkit-overflow-scrolling: touch; }
 
 .reveal .speaker-notes.visible:not(:empty) {
