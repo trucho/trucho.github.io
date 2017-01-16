@@ -50,7 +50,7 @@
 			maxScale: 1.5,
 
 			// Display controls in the bottom right corner
-			controls: false,
+			controls: true,
 
 			// Display a presentation progress bar
 			progress: true,
