@@ -1,0 +1,60 @@
+<!-- From this... -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<style class="cp-pen-styles">.chart div {
+		  font: 10px sans-serif;
+		  background-color: steelblue;
+		  text-align: right;
+		  padding: 3px;
+		  margin: 1px;
+		  color: white;
+		}
+		</style>
+		<div class="chart"></div>
+		<title></title>
+	</head>
+	<body>
+		<!-- // <script src='http://d3js.org/d3.v3.min.js'></script> -->
+		<script type="text/javascript" src="./lib/js/d3.js">
+		</script><script type="text/javascript">
+			var data = [4,8,15,16,23,42];
+			var x = d3.scaleLinear().domain([0,d3.max(data)]).range([0,420]);
+			// d3.select('.chart').selectAll('div')
+// 				.data(data)
+// 			.enter().append('div')
+// 				.style('width', function (d) {return x(d) + 'px';})
+// 				.text(function (d) {return d;});
+			var chart = d3.select(".chart"); //select chart container
+			var bar = chart.selectAll("div") // define selection
+			var barUpdate = bar.data(data); // data join
+			// selection is empty so update and exit are empty too
+			var barEnter = barUpdate.enter().append("div") //instantiates missing elements
+			barEnter.style("width",function (d) {return x(d) + "px";}) // each bar is already bound to data, so it can be used to define its own width
+			barEnter.text(function(d) {return d;}) // produce a label based on data
+		</script>
+			
+		<script>
+			var section = d3.selectAll("body");
+
+			section.append("div")
+			    .html("First!");
+
+			section.append("div")
+			    .html("Second.");
+					
+			d3.select("body")
+				.style("color", "white")
+				.style("background-color", "black");
+		</script>
+			<!-- You get this! -->
+		<!-- <svg>
+	<rect></rect>
+	<rect></rect>
+	<rect></rect>
+	<rect></rect>
+	<rect></rect>
+	<rect></rect>
+</svg> -->
+	</body>
+</html>
