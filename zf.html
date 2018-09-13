@@ -17,7 +17,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 
- </head>
+</head>
 <body style>
 	
 <div class="container">
@@ -44,91 +44,14 @@
 		</tr>
 	</thead>
 	<tbody class="list">
-	
+	{% for post in site.posts %}
 		<tr>
-			<td class="name">LabDoor</td>
-			<td class="city">Chicago</td>
-			<td class="category">startup</td>
-			<td class="tags">consumer, safety, and lab</td>
+			<td class="name">{{ post.company-name }}</td>
+			<td class="city">{{ post.city }}</td>
+			<td class="category">{{ post.categories }}</td>
+			<td class="tags">{{ post.tags | array_to_sentence_string }}</td>
 		</tr>
-	
-		<tr>
-			<td class="name">Eligible</td>
-			<td class="city">Mountain View</td>
-			<td class="category">startup</td>
-			<td class="tags">eligibility, api, and plans</td>
-		</tr>
-	
-		<tr>
-			<td class="name">Cardio</td>
-			<td class="city">Cambridge</td>
-			<td class="category">startup</td>
-			<td class="tags">big data, sensors, and devices</td>
-		</tr>
-	
-		<tr>
-			<td class="name">Cellscope</td>
-			<td class="city">Berkeley</td>
-			<td class="category">startup</td>
-			<td class="tags">device, ER, and children</td>
-		</tr>
-	
-		<tr>
-			<td class="name">Cake Health</td>
-			<td class="city">San Francisco</td>
-			<td class="category">startup</td>
-			<td class="tags">plans, insurance, and finances</td>
-		</tr>
-	
-		<tr>
-			<td class="name">Benefitter</td>
-			<td class="city">San Francisco</td>
-			<td class="category">startup</td>
-			<td class="tags">employer, plans, and aca</td>
-		</tr>
-	
-		<tr>
-			<td class="name">Reify Health</td>
-			<td class="city">Baltimore</td>
-			<td class="category">startup</td>
-			<td class="tags">mobile, monitoring, and aco</td>
-		</tr>
-	
-		<tr>
-			<td class="name">Podimetrics</td>
-			<td class="city">Boston</td>
-			<td class="category">startup</td>
-			<td class="tags">diabetic, device, and feet</td>
-		</tr>
-	
-		<tr>
-			<td class="name">Zipongo</td>
-			<td class="city">Washington</td>
-			<td class="category">startup</td>
-			<td class="tags">wellness, food, and employers</td>
-		</tr>
-	
-		<tr>
-			<td class="name">Pipette</td>
-			<td class="city">San Francisco</td>
-			<td class="category">startup</td>
-			<td class="tags">remote monitoring, device, and aco</td>
-		</tr>
-	
-		<tr>
-			<td class="name">Omada Health</td>
-			<td class="city">San Francisco</td>
-			<td class="category">startup</td>
-			<td class="tags">diabetes, prevention, and device</td>
-		</tr>
-	
-		<tr>
-			<td class="name">AchieveMints</td>
-			<td class="city">San Francisco</td>
-			<td class="category">startup</td>
-			<td class="tags">wellness, consumer, and employer</td>
-		</tr>
-	
+	{% endfor %}
 	</tbody>
 </table>
 </div>
@@ -137,13 +60,10 @@
 
 
 <script type="text/javascript">
-
 var options = {
   valueNames: ['name', 'city', 'category', 'tags']
 };
-
 var entryList = new List('entry-list', options);
-
 </script>
 
 
