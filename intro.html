@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Trucho's Gallery</title>
+
+		<link rel="stylesheet" href="css/slides.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/angueyra.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+				<style>
+					/*Use for the whole presentation while developing iamges*/
+					.reveal .slides {
+					    border: 1px solid white;
+					}
+					
+					/*Use on a slide by slide basis to delimit borders*/
+					div.lims {
+						position:absolute;
+						top:0px;left:0px;
+						width:1920px;height:1080px;
+						color:rgb(125,125,125);
+						border-style: solid; 
+						border-width: 4px; 
+					}
+			
+					sup { 
+					    line-height: 0; 
+					    font-size: 60% !important; 
+					    vertical-align: top;
+					    mso-text-raise:60%;
+					}
+					
+					h1.bluetitle {
+						color: rgb(0, 170, 213);
+						text-align:center;
+						font-weight:900;
+						width: 1900px; left: 10px; top: 10px; height: auto;
+						font-size:1.8em;
+						margin-top:30px;
+						margin-left:30px;
+					}
+					h1.bluetitleL {
+						color: rgb(0, 170, 213);
+						text-align:left;
+						font-weight:900;
+						width: 1850px; left: 10px; top: 10px; height: auto;
+						font-size:1.8em;
+						margin-top:30px;
+						margin-left:-20px;
+					}
+					h1.bluetitleR {
+						color: rgb(0, 170, 213);
+						text-align:right;
+						font-weight:900;
+						width: 1850px; left: 10px; top: 10px; height: auto;
+						font-size:1.8em;
+						margin-top:30px;
+						margin-left:-20px;
+					}
+					h1.bluetitleBIG {
+						color: rgb(0, 170, 213);
+						text-align:center;
+						font-weight:1800;
+						width: 1900px; left: 10px; top: 10px; height: auto;
+						font-size:3.6em;
+						margin-top:30px;
+						margin-left:30px;
+					}
+					h1.whitetitle {
+						color: white;
+						text-align:left;
+						font-weight:900;
+						width: 1900px; left: 10px; top:10px; height: auto;
+						font-size:1.8em;
+						margin-top:30px;
+						margin-left:30px;
+					}
+					h1.whitetitleR {
+						color: white;
+						text-align:right;
+						font-weight:900;
+						width: 1900px; left: 10px; top:10px; height: auto;
+						font-size:1.3em;
+						margin-top:30px;
+						margin-left:30px;
+					}
+					h1.warntitle {
+						color: rgb(237,152,59);
+						text-align:right;
+						font-weight:1500;
+						width: 1400px; left: 10px; top: 500px; height: auto;
+						font-size:2.5em;
+						margin-top:0px;
+						z-index:0;
+					}
+					h1.reminder {
+						color: rgb(237,59,59);
+						position:absolute;
+						text-align:center;
+						font-weight:1500;
+						width: 1920px; left: 0px; top: 500px; height: auto;
+						font-size:2.5em;
+						margin-top:000px;
+						z-index:1000;
+					}
+					h1.endtitle {
+						color: rgb(0, 170, 213);
+						text-align:right;
+						font-weight:1500;
+						width: 1900px; left: 10px; top: 700px; height: auto;
+						font-size:1.8em;
+						margin-top:100px;
+						margin-bottom:30px;
+					}
+					h1.endtitlered {
+						color: rgb(255, 194, 158);
+						text-align:right;
+						font-weight:1500;
+						width: 1850px; left: 10px; top: 700px; height: auto;
+						font-size:1.8em;
+						margin-top:100px;
+						margin-right:100px;
+						margin-bottom:30px;
+					}	
+					h1.endtitleredL {
+						color: rgb(255, 194, 158);
+						text-align:left;
+						font-weight:1500;
+						width: 1750px; left: 250px; top: 700px; height: auto;
+						font-size:1.3em;
+						margin-top:100px;
+						margin-left:200px;
+						margin-bottom:30px;
+					}				
+					p.citationwhite {
+						text-align:right;
+						font-size:100%;
+						margin-right:5%;
+						color:white;
+					}
+					p.citation {
+						text-align:right;
+						font-size:100%;
+						margin-right:5%;
+						color:rgb(150,150,150);
+					}
+					.sturdy td:nth-child(1) {
+					  width: 58%;
+					  text-align:right;
+					}
+					.sturdy td:nth-child(2) {
+					  width: 32%;
+					  text-align:left;
+					}
+					.sturdy td:nth-child(3) {
+					  width: 10%;
+					  text-align:center;
+					}
+						
+					mark.r {color: #747474;background: #000000;}
+					.u {color: #B540B7;background: #000000;}
+					.s {color: #4669F2;background: #000000;}
+					.m {color: #04CD22;background: #000000;}
+					.l {color: #CC2C2A;background: #000000;}
+					
+					div.slblock-content.box {
+						font-size: 145%; 
+						text-align: left; 
+						background-color: black;
+						border-style: solid; 
+						border-width: 4px; 
+						border-radius: 20px; 
+						padding: 25px;
+					}
+			
+					div.slblock-content.boxgrey {
+						font-size: 145%; 
+						text-align: left; 
+						color:rgb(125,125,125);
+						background-color: black;
+						border-style: solid; 
+						border-width: 4px; 
+						border-radius: 20px; 
+						padding: 25px;
+					}
+			
+					div.slblock-content.boxred {
+						font-size: 145%; 
+						text-align: center; 
+						background-color: rgb(150, 34, 38);
+						border-style: solid; 
+						border-width: 0px; 
+						border-radius: 20px; 
+						padding: 25px;
+					}
+					
+					div.slblock-content.boxblack {
+						font-size: 145%; 
+						text-align: center; 
+						background-color: rgb(0,0,0);
+						border-style: solid; 
+						border-width: 0px; 
+						border-radius: 20px; 
+						padding: 25px;
+					}
+			
+					div.slblock-content.boxblue {
+						font-size: 145%; 
+						text-align: center; 
+						background-color: black;
+						border-style: solid; 
+						border-width: 4px; 
+						border-radius: 20px; 
+						border-color:rgb(80, 80, 180);
+						padding: 25px;
+					}
+			
+					p.blue{color:rgb(80, 80, 180);}
+			
+					img.fader:hover {
+		/*			    -webkit-transform: scaleX(-1);*/
+		/*			    transform: scaleX(-1);*/
+						opacity:0;
+					}
+					img.overlay{
+						position:absolute;
+					}
+			
+					div.polaroid {
+					    width: 50%;
+					    background-color: rgb(8,8,8);
+					    box-shadow: 0px 16px 32px 1px rgba(200, 200, 200, 0.2), 1px 24px 80px 1px rgba(200, 200, 200, 0.19);
+					}
+			
+					div.containerpol {
+					  text-align: center;
+					  padding: 10px 20px;
+					}
+				</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="theme-font-avenir theme-color-no-color" style="width: 100%; height: 100%;">
+			    <div class="reveal">
+			        <div class="slides">
+						
+						
+
+						
+						<section class="stack"> <!-- Subtypes -->
+							
+							<section id="S01"> <!-- Title -->
+								<h1 class="bluetitle" style="text-align:center">Trucho's webpage (in progress)</h1>
+								<div class="sl-block" data-block-type="image" style="width: 600px; height: auto; left: 100px; top: 150px;">
+								    <div class="sl-block-content">
+								        <img style="" data-natural-width="" data-natural-height="" src="./resources/zfBasics/zfAdultMosaic.png" data-lazy-loaded=""/>
+								    </div>
+									<p class="citationwhite"><u>Mosaic of zebrafish photoreceptors</u><br/>&emsp;&emsp;&emsp;<mark class="u">Magenta</mark> = <mark class="u">UV</mark>-cones<br/>&emsp;&emsp;&emsp;<mark class="s">Blue</mark> = <mark class="s">S</mark> cones<br/>&emsp;&emsp;&emsp;<mark class="r">Grey</mark> = Nuclei of <mark class="m">M</mark> and <mark class="l">L</mark> cones<br/>Published in <a href="https://www.frontiersin.org/articles/10.3389/fcell.2018.00110/full" target="_blank">Angueyra and Kindt, 2018</a></p>
+								</div>
+							</section>
+						
+						</section> <!-- Subtypes end -->
+
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				center: false,
+				width: 1920,
+				height: 1080,
+				controls: true,
+				controlsTutorial: true,
+				controlsLayout: 'bottom-right',
+				hideAddressBar: true,
+				maxScale: 10,
+				transition: 'none',
+				navigationMode: 'linear',
+				//menu: {
+				//	side: 'left', numbers: true, transitions: true,
+				//	openSlideNumber: true, keyboard: true, themes: false},
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/anime.min/anime.min.js' },
+					// { src: 'plugin/menu/menu.js' },
+					{ src: 'plugin/anything/anything.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
