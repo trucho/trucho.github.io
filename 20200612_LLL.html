@@ -7,7 +7,7 @@
 		<title>Trucho's Gallery</title>
 
 		<link rel="stylesheet" href="css/slides.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 		<link rel="stylesheet" href="css/theme/angueyra.css">
 
 		<!-- Theme used for syntax highlighted code -->
@@ -18,7 +18,15 @@
 			<style>
 				/*Use for the whole presentation while developing images*/
 				.reveal .slides {
-				    border: 4px solid white;
+				    /* border: 4px solid white; */
+				}
+				.reveal .slide-number {
+  				font-size: 42pt;
+					left: 1%;
+					top:1%;
+					color: #7765a4;
+					background-color: rgba(0,0,0,0);
+
 				}
 
 				/*Use on a slide by slide basis to delimit borders*/
@@ -254,23 +262,293 @@
 						<section class="stack"> <!-- Subtypes -->
 
 							<section id="S01"> <!-- Title -->
-								<h1 class="bluetitle" style="text-align:center">This is slide 1</h1>
-								<div class="sl-block" data-block-type="image" style="width: 600px; height: auto; left: 100px; top: 150px">
-								    <div class="sl-block-content">
-								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/zfBasics/zfAdultMosaic.png" data-lazy-loaded=""/>
-								    </div>
-									<p class="citationwhite"><u>Mosaic of zebrafish photoreceptors</u><br/>&emsp;&emsp;&emsp;<mark class="u">Magenta</mark> = <mark class="u">UV</mark>-cones<br/>&emsp;&emsp;&emsp;<mark class="s">Blue</mark> = <mark class="s">S</mark> cones<br/>&emsp;&emsp;&emsp;<mark class="r">Grey</mark> = Nuclei of <mark class="m">M</mark> and <mark class="l">L</mark> cones<br/>Published in <a href="https://www.frontiersin.org/articles/10.3389/fcell.2018.00110/full" target="_blank">Angueyra and Kindt, 2018</a></p>
+								<h1 class="bluetitleR">LiLabLunch: June 12th, 2020</h1>
+								<div class="sl-block" data-block-type="image" style="width: 50%; height: auto; left: 10%; top: 150px">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="3080" data-natural-height="2686" src="./resources/20200610_LLL/TitleSummary.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block" data-block-type="text" style="width: 40%; height: auto; left: 60%; top: 20%">
+										<ul>
+											<li>In larval zebrafish <mark class="u">UV cones</mark> are specialized by region</li>
+											<li><mark class="u">UV cones</mark> in "strike zone" &rarr; prey capture</li>
+											<li> Techniques:
+												<ul >
+													<li style="margin-left:40px">Imaging</li>
+													<li style="margin-left:40px">Behaviour</li>
+													<li style="margin-left:40px">Ca<sup>2+</sup>-imaging + Glu-imaging</li>
+													<li style="margin-left:40px">RNAseq</li>
+													<li style="margin-left:40px">Modeling</li>
+												</ul>
+											</li>
+											<li>Boldest claim: </br> <u>zebrafish larval "strike zone" &asymp; primate fovea</u></li>
+										</ul>
 								</div>
 							</section>
 
 							<section id="S02"> <!-- Title -->
-								<h1 class="bluetitle" style="text-align:center">This is slide 2</h1>
-
+								<h1 class="bluetitleR">Some background: Zimmerman et al., 2018</h1>
+								<div class="sl-block" data-block-type="image" style="width: auto; height: 80%; left: 5%; top: 150px">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/BG_ZimmermannFig1.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block fragment" data-block-type="image" style="width: 30%; height: auto; left: 67%; top: 20%">
+										<img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/SnellWindow.png" data-lazy-loaded=""/>
+								</div>
 							</section>
 
 							<section id="S03"> <!-- Title -->
-								<h1 class="bluetitle" style="text-align:center">This is slide 3</h1>
+								<h1 class="bluetitleR">Some background: Zimmerman et al., 2018</h1>
+								<div class="sl-block" data-block-type="image" style="width: auto; height: 80%; left: 10%; top: 150px">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/BG_ZimmermannFig2.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block" data-block-type="text" style="width: 40%; height: auto; left: 60%; top: 20%">
+									<ul>
 
+									</ul>
+								</div>
+							</section>
+
+							<section id="S03b"> <!-- Title -->
+								<h1 class="bluetitleR">Some background: Zimmerman et al., 2018</h1>
+								<div class="sl-block" data-block-type="image" style="width: auto; height: 80%; left: 10%; top: 150px">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/BG_ZimmermannFig2b.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block" data-block-type="text" style="width: 40%; height: auto; left: 60%; top: 20%">
+									<ul>
+										<li>Rest of paper = IPL responses</li>
+									</ul>
+								</div>
+							</section>
+
+							<section id="Fig1a"> <!-- Title -->
+								<h1 class="bluetitleR">Fig 1: <u>paramecia appear as <mark class="u">UV-bright spots</mark> in the upper visual field</u></h1>
+								<div class="sl-block" data-block-type="image" style="width: 65%; height: auto; left: 2%; top: 150px">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig1a.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block fragment" data-block-type="image" style="width: 33%; height: auto; left: 65%; top: 25%">
+												<p style="margin-left: 5%; text-align:left; color:Yellow">Yellow channel &darr;</p>
+												<img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/mov1.gif" data-lazy-loaded=""/>
+												<p style="margin-right: 5%; text-align:right; color:#B540B7">UV  channel &uarr;</p>
+								</div>
+							</section>
+
+							<section id="Fig1b"> <!-- Title -->
+								<h1 class="bluetitleR">Fig 1: <u>zebrafish larvae use <mark class="u">UV cones</mark> to detect paramecia</u></h1>
+								<div class="sl-block" data-block-type="image" style="width: auto; height: 80%; left: 2%; top: 150px">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig1b.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block" data-block-type="image" style="width: 33%; height: auto; left: 65%; top: 25%">
+												<img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/mov2.gif" data-lazy-loaded=""/>
+								</div>
+							</section>
+
+							<section id="Fig2a01"> <!-- Title -->
+								<h1 class="bluetitleR">Fig 2: some math + optics to convert paramecia into retinal space</u></h1>
+								<div class="sl-block fragment" data-block-type="image" style="width: 65%; height: auto; left: 0%; top: 150px">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig2aa.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block" data-block-type="image" style="width: 35%; height: auto; left: 65%; top: 10%">
+									<img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Hunting.gif" data-lazy-loaded=""/>
+									<p style="text-align:left">How many <mark class="u">UV-cones</mark></br>are used to <u>detect</u> one <i>paramecium</i>? <u>Just one!</u></p>
+									<p style="text-align:left">&rarr; Detection is physically constrained:</p>
+									<ul>
+										<li>Eye optics (size, focal dist.) + Distance (~3mm)</li>
+										<li>Paramecium size (~100 &mu;m &asymp; 1.8&deg;)</li>
+										<li>Photoreceptor spacing in SZ (~ 2.3&deg;)</li>
+									</ul>
+								</div>
+							</section>
+
+							<section id="Fig2a02"> <!-- Title -->
+								<h1 class="bluetitleR">Fig 2: some math + optics to convert paramecia into retinal space</u></h1>
+								<div class="sl-block" data-block-type="image" style="width: 65%; height: auto; left: 0%; top: 150px">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig2a.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block" data-block-type="image" style="width: 35%; height: auto; left: 65%; top: 10%">
+									<img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Hunting.gif" data-lazy-loaded=""/>
+									<p style="text-align:left">How many <mark class="u">UV-cones</mark></br>are used to <u>strike at</u> one <i>paramecium</i>? <u>2-3/eye</u></p>
+									<p style="text-align:left">&rarr; Detection is physically constrained:</p>
+									<ul>
+										<li>Eye optics (size, focal dist.) + Distance (~1mm)</li>
+										<li>Paramecium size (~100 &mu;m &asymp; 5.7&deg;)</li>
+										<li>Photoreceptor spacing in SZ (~ 2.3&deg;)</li>
+										<li>Binocular detection</li>
+									</ul>
+								</div>
+							</section>
+
+							<section id="Fig2b"> <!-- Title -->
+								<h1 class="bluetitleR">Fig 2: <u>SZ <mark class="u">UV cones</mark> are specialized</u></h1>
+								<div class="sl-block" data-block-type="image" style="width: auto; height: 80%; left: 0%; top: 150px">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig2b.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block" data-block-type="text" style="width: 30%; height: auto; left: 70%; top: 20%">
+									<ul>
+										<li>Long outer segments</br> (9.0 &mu;m vs 0.6 &mu;m in ventral retina)</li>
+										<li>Estimated 14-fold boost in photon-catching</li>
+										<li>In SZ: <mark class="u">UV-cones</mark> are</br> more dense (x3),</br> catch more photons (x14)</br> + Binocular (x2)</br> = 84x more sensitive</li>
+										<li></li>
+									</ul>
+								</div>
+							</section>
+
+							<section id="Fig2c"> <!-- Title -->
+								<h1 class="bluetitleR">Fig S1: <u>SZ <mark class="u">UV cones</mark> are specialized</u></h1>
+								<div class="sl-block" data-block-type="image" style="width: 65%; height: auto; left: 0%; top: 25%">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig2c.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block" data-block-type="text" style="width: 30%; height: auto; left: 70%; top: 20%">
+									<ul>
+										<li>Long outer segments</br> (9.0 &mu;m vs 0.6 &mu;m in ventral retina)</li>
+										<li>Estimated 14-fold boost in photon-catching</li>
+										<li>In SZ: <mark class="u">UV-cones</mark> are</br> more dense (x3),</br> catch more photons (x14)</br> + Binocular (x2)</br> = 84x more sensitive</li>
+										<li>Also 5x increase in mitochondrial size (energy? extra focusing?)</li>
+									</ul>
+								</div>
+							</section>
+
+							<section id="Fig3a"> <!-- Title -->
+								<h1 class="bluetitleR">Fig 3: <u>SZ <mark class="u">UV cones</mark> respond better to increase in contrast</u></h1>
+								<img class="plain" style = "width: 100%; margin-top: 5%" src="./resources/20200610_LLL/Fig3a.png" data-lazy-loaded=""/>
+								<p style="text-align:left; margin-left:10%">Paramecium = Bright 2&deg; target moving at 90 &deg;/s &asymp; 30 ms flash</p>
+							</section>
+
+							<section id="Fig3b"> <!-- Title -->
+								<h1 class="bluetitleR">Fig 3: <u>No linear relationship between OS length and Ca<sup>2+</sup>-signals</u></h1>
+								<img class="plain" style = "width: 100%; margin-top: 5%" src="./resources/20200610_LLL/Fig3b.png" data-lazy-loaded=""/>
+							</section>
+
+							<section id="Fig4"> <!-- Title -->
+								<h1 class="bluetitleR">Fig 4: <u>SZ <mark class="u">UV cones</mark> have longer integration times</u> (HCs prolong integration)</h1>
+								<div class="sl-block" data-block-type="image" style="width: 70%; height: auto; left: 0%; top: 11%">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig4.png" data-lazy-loaded=""/>
+								</div>
+							</section>
+
+							<section id="Fig5"> <!-- Title -->
+								<h1 class="bluetitleR">Fig 5: <u>Toy model confirms their hypothesis</u>: paramecia detection &uarr; in SZ</h1>
+								<div class="sl-block" data-block-type="image" style="width: 65%; height: auto; left: 0%; top: 13%">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig5.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block" data-block-type="image" style="width: 35%; height: auto; left: 65%; top: 20%">
+									<img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/mov5.gif" data-lazy-loaded=""/>
+								</div>
+							</section>
+
+							<section id="Fig6a"> <!-- Title -->
+								<h1 class="bluetitleR">Fig 6: <u>Differences in <mark class="u">UV-</mark>responses correlate with baseline [Ca<sup>2+</sup>]</u></h1>
+								<div class="sl-block" data-block-type="image" style="width: auto; height: 95%; left: 0%; top: 10%">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig6.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block" data-block-type="text" style="width: 30%; height: auto; left: 60%; top: 20%">
+									<ul>
+										<li>A: higher gCaMP signals in SZ</li>
+										<li>B: not due to higher gCaMP expression</li>
+										<li>D-G: due to elevated [Ca<sup>2+</sup>]</li>
+										<li>&#9888; In darkness, cones are depolarized and [Ca<sup>2+</sup>] is high</li>
+									</ul>
+									<img class="plain fragment" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/CaPlot.png" data-lazy-loaded=""/>
+								</div>
+							</section>
+
+							<section id="Fig6b"> <!-- Title -->
+								<h1 class="bluetitleR">Fig S2: <u>Differences in baseline [Ca<sup>2+</sup>]</u> is not due to hc-feedback</h1>
+								<div class="sl-block" data-block-type="image" style="width: auto; height: 95%; left: 0%; top: 10%">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig6Supp.png" data-lazy-loaded=""/>
+								</div>
+							</section>
+
+							<section id="Fig7a"> <!-- Title -->
+								<h1 class="bluetitleR">Fig 7: <u>RNAseq-approach to uncover differences in SZ <mark class="u">UV-cones</mark></u></h1>
+								<div class="sl-block" data-block-type="image" style="width: auto; height: 95%; left: 0%; top: 10%">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig7a.png" data-lazy-loaded=""/>
+								</div>
+							</section>
+
+							<section id="Fig7b"> <!-- Title -->
+								<h1 class="bluetitleR">Fig 7: <u>Differences in responses can be accounted by differences in expression of phototransduction genes</u></h1>
+								<div class="sl-block" data-block-type="image" style="width: auto; height: 88%; left: 0%; top: 15%">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig7b.png" data-lazy-loaded=""/>
+								</div>
+							</section>
+
+							<section id="Fig8a"> <!-- Title -->
+								<h1 class="bluetitleR">Fig 8: <u>Glutamate-imaging from single cone terminals</u></h1>
+								<div class="sl-block" data-block-type="image" style="width: auto; height: 95%; left: 0%; top: 10%">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig8a.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block" data-block-type="image" style="width: 40%; height: auto; left: 60%; top: 40%">
+									<img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/mov7.gif" data-lazy-loaded=""/>
+								</div>
+							</section>
+
+							<section id="Fig8b"> <!-- Title -->
+								<h1 class="bluetitleR">Fig 8: <u>Stimulus encoding is different in SZ</u></h1>
+								<div class="sl-block" data-block-type="image" style="width: auto; height: 95%; left: 0%; top: 10%">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig8b.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block" data-block-type="text" style="width: 30%; height: auto; left: 70%; top: 20%">
+									<ul>
+										<li>Non-linear synaptic transformation (CaV1.4 vs. [Ca<sup>2+</sup>])</li>
+										<li>SZ <mark class="u">UV-pedicles</mark> reliably encode light-to-dark transitions</li>
+									</ul>
+								</div>
+							</section>
+
+							<section id="Conclusions01"> <!-- Title -->
+								<h1 class="bluetitleR">Conclusions I</h1>
+								<div class="sl-block" data-block-type="image" style="width: 50%; height: auto; left: 10%; top: 150px">
+												<img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="3080" data-natural-height="2686" src="./resources/20200610_LLL/TitleSummary.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block" data-block-type="text" style="width: 40%; height: auto; left: 60%; top: 20%">
+										<ul>
+											<li>In larval zebrafish <mark class="u">UV cones</mark> are specialized by region</li>
+											<li><mark class="u">UV cones</mark> in "strike zone" &rarr; prey capture:
+												<ul style="list-style-type:none">
+													<li style="margin-left:10px">&uarr; density</li>
+													<li style="margin-left:10px">&uarr; outer segments</li>
+													<li style="margin-left:10px">&uarr; detectability of UV-bright stimuli</li>
+													<li style="margin-left:30px">&rdsh; changes in phototransduction + [Ca<sup>2+</sup>]</li>
+												</ul>
+											</li>
+											<li><mark class="u">UV cones</mark> in "horizon zone" (Dorsal/Nasal) &rarr; predator detection</li>
+											<li>"strike zone" &asymp; primate fovea</u>?</li>
+										</ul>
+								</div>
+							</section>
+
+							<section id="Conclusions02"> <!-- Title -->
+								<h1 class="bluetitleR">Conclusions II</h1>
+								<div class="sl-block" data-block-type="image" style="width: 50%; height: auto; left: 10%; top: 25%">
+												<img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="3080" data-natural-height="2686" src="./resources/20200610_LLL/RGCdensity.png" data-lazy-loaded=""/>
+								</div>
+								<div class="sl-block" data-block-type="text" style="width: 40%; height: auto; left: 60%; top: 20%">
+										<ul>
+											<li>In larval zebrafish <mark class="u">UV cones</mark> are specialized by region</li>
+											<li><mark class="u">UV cones</mark> in "strike zone" &rarr; prey capture
+											<li>Bipolar cells in "strike zone" display <mark class="u">UV-on</mark> responses (Zimmerman, 2018)</li>
+											<li>Ganglion cells in "strike zone" display <mark class="u">UV-on</mark> responses (Zhou, 2020)</li>
+											<li>RGCs are more dense in SZ</li>
+											<li>AF7 tectal area (prey capture) is innervated mainly by temporal RGCs</li>
+											<li>"strike zone" &asymp; primate fovea</u>?</li>
+										</ul>
+								</div>
+							</section>
+
+							<section>
+
+							</section>
+
+							<section id="Fig8Sa"> <!-- Title -->
+								<h1 class="bluetitleR">Fig S3: <u>Trying to correct for sensor kinetics</u></h1>
+								<div class="sl-block" data-block-type="image" style="width: auto; height: 95%; left: 0%; top: 10%">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig8Sa.png" data-lazy-loaded=""/>
+								</div>
+							</section>
+
+							<section id="Fig8Sb"> <!-- Title -->
+								<h1 class="bluetitleR">Fig S3: <u>Summary traces by region</u></h1>
+								<div class="sl-block" data-block-type="image" style="width: auto; height: 95%; left: 0%; top: 10%">
+								        <img class="plain" style = "background-color:rgba(0,0,0,0)" data-natural-width="" data-natural-height="" src="./resources/20200610_LLL/Fig8Sb.png" data-lazy-loaded=""/>
+								</div>
 							</section>
 
 						</section> <!-- Subtypes end -->
@@ -285,6 +563,8 @@
 		<script src="plugin/highlight/highlight.js"></script>
 
 		<script>
+
+
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
@@ -293,24 +573,22 @@
 				height: 1080,
 				controls: true,
 				controlsTutorial: true,
-				controlsLayout: 'bottom-right',
+				controlsLayout: 'bottom-left',
 				hideAddressBar: true,
 				maxScale: 10,
 				transition: 'none',
 				navigationMode: 'linear',
+				slideNumber: 'c/t',
 				plugins: [ RevealMarkdown, RevealHighlight ],
-				multiplex: {
-			    // Example values. To generate your own, see the socket.io server instructions.
-			    secret: null, // null so the clients do not have control of the master presentation
-			    id: 'ea029e9f31349b65', // id, obtained from socket.io server
-			    url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
-			  },
 
-			  // Don't forget to add the dependencies
-			  dependencies: [
-			    { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js', async: true },
-			    { src: 'node_modules/reveal-multiplex/client.js', async: true }
-			  ]
+
+				// Don't forget to add the dependencies
+				dependencies: [
+
+
+					// and if you want speaker notes
+					// { src: 'node_modules/reveal-notes-server/client.js', async: true }
+				]
 			});
 		</script>
 	</body>
