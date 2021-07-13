@@ -1,0 +1,14 @@
+name: "Juan Angueyra"
+description: "Angueyra website"
+
+url: "http://trucho.github.io"
+
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "blog/page:num"
+
+permalink: pretty
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  parse_block_html: true

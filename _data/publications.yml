@@ -1,0 +1,10 @@
+- title: "Leveraging Zebrafish to Study Retinal Degenerations"
+  citation: "**Angueyra JM**, Kindt KS. Leveraging Zebrafish to Study Retinal Degenerations. *Front Cell Dev Biol*. 2018 Sep 19;6:110"
+  image: "/static/img/pub/zfAdultMosaic.png"
+  date: "2018-09-19"
+  pmid: "30283779"
+  pmcid: "PMC6156122"
+  pdf: "https://www.frontiersin.org/articles/10.3389/fcell.2018.00110/full"
+  # zenodo:
+  #   - code: "4606923"
+  #     description: "Tomogram used for CellPAINT hypothesis generation"
