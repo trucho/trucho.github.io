@@ -4,7 +4,7 @@ layout: default
 group: home
 ---
 
-<img src="/static/img/hcWaves.jpg" class="img-responsive center-block" alt="A bloom of horizontal cells in the zebrafish retina"/>
+<img src="/static/img/hcBloom.jpg" class="img-responsive center-block" alt="A bloom of horizontal cells in the zebrafish retina"/>
 
 <h1 class="text-center">Juan Angueyra, M.D., Ph.D.</h1>
 
