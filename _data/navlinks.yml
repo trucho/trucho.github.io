@@ -6,6 +6,10 @@
   url: /publications
   group: publications
 
+- name: resources
+  url: /resources
+  group: resources
+
 - name: blog
   url: /blog
   group: blog

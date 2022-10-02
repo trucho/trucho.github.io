@@ -1,7 +1,7 @@
 name: "Juan Angueyra"
 description: "Angueyra website"
 
-url: "http://trucho.github.io"
+url: "http://angueyraNIH.github.io"
 
 gems: [jekyll-paginate]
 paginate: 5
