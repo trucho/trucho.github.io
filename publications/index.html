@@ -51,7 +51,7 @@ group: publications
 
 <h2>Reviews, opinions, editorials and books</h2>
 <div class="container-fluid">
-  {% for publication in site.data.publications %}
+  {% for publication in site.data.publicationsReviews %}
           <hr>
           <div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{publication.pmid}}">
           <div style="font-size: 120% !important; width: 100%">{{ publication.title | markdownify }}</div><div>{{ publication.citation | markdownify }}</div>
