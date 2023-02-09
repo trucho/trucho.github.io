@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('../lib/font/opendyslexic/opendyslexic3.ttf');
+  src: url('../lib/font/opendyslexic/opendyslexic3.ttf?#iefix') format('embedded-opentype'), url('../lib/font/opendyslexic/opendyslexic3.ttf') format('ttf'), url('../lib/font/opendyslexic/opendyslexic3.ttf') format('ttf');
+}
