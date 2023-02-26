@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>CatalystSeminar_Feb27_2023</title>
+
+	<link rel="stylesheet" href="css/slides.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="css/theme/angueyra.css">
+	<link rel="stylesheet" href="css/AngueyraCustomizations.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+
+	<style>
+		/*Use for the whole presentation while developing images*/
+		.reveal .slides {
+			border: 4px solid white;
+			/* border: 0px solid white; */
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="theme-font-avenir theme-color-no-color" style="width: 100%; height: 100%;">
+			<div class="reveal">
+				<div class="slides">
+
+					<section id="Title">
+						<h1 class="bluetitle expression">
+							<span class='rainbow'>Visual Development Lab : &emsp;</span>
+							Building and&emsp;
+							<span class='supsub'>
+							  <sup class='superscript flipX'> Rebuilding</sup>
+							  <sub class='subscript flip'> Misbuilding</sub>
+							</span>
+							&emsp;Retinal Circuits
+						</h1>
+						<h2 style="color:#B3B3B3; text-align:right; margin-right:5%">Juan Angueyra</h2>
+
+						<div class="sl-block fragment fade-out" data-fragment-index="1" data-block-type="image" style="width: 25%; height: auto; right: 2%; bottom: 8%;">
+								<div class="sl-block-content" style="z-index: 0;">
+										<object style="width:80%" data="./resources/zfVector_AdultLarva.svg" type="image/svg+xml"></object>
+								</div>
+						</div>
+
+						<div class="sl-block fragment fade-out" data-fragment-index="1" data-block-type="image" style="width: 52%; height: auto; left: 5%; top: 15%;">
+							<div class="sl-block-content" style="z-index: 13; font-size:80%">
+								<h3>Zebrafish eye development <br /> 12.5 - 24.5 hpf</h3>
+								<img style="plain" data-natural-width="" data-natural-height="" src="./resources/intro/Kwan_NeuralCrest2021_movie1.gif" data-lazy-loaded="" />
+								<p class="citation">
+									<mark class="m"><em>&beta;actin:GFP-CAAX</em></mark> <br>
+									<mark class="u"><em>sox10:memRFP</em></mark>
+								</p>
+								<p class="citation"> Courtesy of Kwan Lab: Bryan <em>et al.</em> (2020)</p>
+							</div>
+						</div>
+
+						<div class="sl-block fragment fade-out" data-fragment-index="1" data-block-type="image" style="width: 45%; height: auto; left: 55%; top: 40%;">
+							<ul>
+								<li>Eye development is extremely complex</li>
+								<ul style="list-style: none;">
+									<li>&rarr; coordination</li>
+									<li>&rarr; local and global interactions</li>
+									<li>&rarr; dynamic</li>
+								</ul>
+							</ul>
+						</div>
+
+						<div class="sl-block fragment" data-fragment-index="1" data-block-type="image" style="width: 1000px; height: auto; left: 30px; top: 150px;">
+							<div class="sl-block-content">
+								<img style="plain" data-natural-width="" data-natural-height="" src="./resources/intro/RetBasics01.png" data-lazy-loaded="" />
+							</div>
+						</div>
+
+						<div class="sl-block fragment" data-fragment-index="1" data-block-type="image" style="width: 40%; height: auto; left: 55%; top: 250px;">
+							<div class="sl-block-content">
+								<img style="plain" data-natural-width="" data-natural-height="" src="./resources/intro/zfA_RetSectionExample_20171031_02.png" data-lazy-loaded="" />
+							</div>
+						</div>
+
+					</section>
+
+					<section id="RetCellDiversity">
+						<h1 class="bluetitleL">How are retinal cells <u>subtypes</u> generated during development?</h1>
+						<div class="sl-block" data-block-type="media" style="width: 1600px; height: auto; left: 150px; top: 120px;">
+							<div class="sl-block-content">
+								<object class="" style="width:100%;" data="./resources/intro/RetCellDiversity.svg" type="image/svg+xml"></object>
+							</div>
+						</div>
+						<aside class="notes">
+							I think that it's impossible to not be amazed by what our visual system is able to accomplish (work at day or night, high speed tracking, etc.) but as you look at how this is accomplished, you discover that it requires an immense number of different parts (ie cells) that have to be first specified and then wired into complex retinal circuits, and yet again, errors in the correct specification of this cell types can create big defects in our visual perception.
+						</aside>
+					</section>
+
+
+					<section id="Mutants">
+						<h1 class="bluetitleL">CRISPR mutants: identify transcription factor that control cell identity</h1>
+						<div class="sl-block" data-block-type="image" style="width: auto; height: 90%; left: 20%; top: 120px;">
+							<div class="sl-block-content">
+								<img style="plain" data-natural-width="" data-natural-height="" src="./resources/intro/CRtbx2aF0_5dpf_RU.png" data-lazy-loaded="" />
+
+							</div>
+						</div>
+						<aside class="notes">
+							I think that it's impossible to not be amazed by what our visual system is able to accomplish (work at day or night, high speed tracking, etc.) but as you look at how this is accomplished, you discover that it requires an immense number of different parts (ie cells) that have to be first specified and then wired into complex retinal circuits, and yet again, errors in the correct specification of this cell types can create big defects in our visual perception.
+						</aside>
+					</section>
+
+					<section id="hcWiring">
+						<h1 class="bluetitleL">How are retinal cells <u>subtypes</u> properly wired?</h1>
+						<p class="citation"> <em>Dime con quien andas y te diré quien eres</em> </p>
+						<div class="sl-block" data-block-type="image" style="width: 54%; height: auto; left: 20%; top: 150px;">
+							<div class="sl-block-content">
+								<img class="plain" src="./resources/intro/zfHCs_ii.png" data-lazy-loaded="" />
+							</div>
+						</div>
+
+						<div data-block-type="text" style="width: 45%; height: auto; left: 55%; top: 40%;">
+
+						</div>
+					</section>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/mouse-pointer/mouse-pointer.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			history: true,
+			center: false,
+			width: 1920,
+			height: 1080,
+			controls: true,
+			controlsTutorial: true,
+			controlsLayout: 'bottom-right',
+			hideAddressBar: true,
+			maxScale: 10,
+			transition: 'none',
+			navigationMode: 'linear',
+			slideNumber: 'c',
+			progress: true,
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+		});
+	</script>
+</body>
+
+</html>
