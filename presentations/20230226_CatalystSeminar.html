@@ -20,8 +20,8 @@
 	<style>
 		/*Use for the whole presentation while developing images*/
 		.reveal .slides {
-			border: 4px solid white;
-			/* border: 0px solid white; */
+			/* border: 4px solid white; */
+			border: 0px solid white;
 		}
 	</style>
 </head>
@@ -53,7 +53,7 @@
 						<div class="sl-block fragment fade-out" data-fragment-index="1" data-block-type="image" style="width: 52%; height: auto; left: 5%; top: 15%;">
 							<div class="sl-block-content" style="z-index: 13; font-size:80%">
 								<h3>Zebrafish eye development <br /> 12.5 - 24.5 hpf</h3>
-								<img style="plain" data-natural-width="" data-natural-height="" src="./resources/intro/Kwan_NeuralCrest2021_movie1.gif" data-lazy-loaded="" />
+								<img style="plain" src="./resources/intro/Kwan_NeuralCrest2021_movie1.gif" data-lazy-loaded="" />
 								<p class="citation">
 									<mark class="m"><em>&beta;actin:GFP-CAAX</em></mark> <br>
 									<mark class="u"><em>sox10:memRFP</em></mark>
@@ -75,13 +75,13 @@
 
 						<div class="sl-block fragment" data-fragment-index="1" data-block-type="image" style="width: 1000px; height: auto; left: 30px; top: 150px;">
 							<div class="sl-block-content">
-								<img style="plain" data-natural-width="" data-natural-height="" src="./resources/intro/RetBasics01.png" data-lazy-loaded="" />
+								<img style="plain" src="./resources/intro/RetBasics01.png" data-lazy-loaded="" />
 							</div>
 						</div>
 
 						<div class="sl-block fragment" data-fragment-index="1" data-block-type="image" style="width: 40%; height: auto; left: 55%; top: 250px;">
 							<div class="sl-block-content">
-								<img style="plain" data-natural-width="" data-natural-height="" src="./resources/intro/zfA_RetSectionExample_20171031_02.png" data-lazy-loaded="" />
+								<img style="plain" src="./resources/intro/zfA_RetSectionExample_20171031_02.png" data-lazy-loaded="" />
 							</div>
 						</div>
 
@@ -94,39 +94,94 @@
 								<object class="" style="width:100%;" data="./resources/intro/RetCellDiversity.svg" type="image/svg+xml"></object>
 							</div>
 						</div>
+						<h1 class="reminder fragment fade-in-" style="background-color:rgba(0,0,0,0.88);">How does an organism make cells different from each other?</h1>
 						<aside class="notes">
 							I think that it's impossible to not be amazed by what our visual system is able to accomplish (work at day or night, high speed tracking, etc.) but as you look at how this is accomplished, you discover that it requires an immense number of different parts (ie cells) that have to be first specified and then wired into complex retinal circuits, and yet again, errors in the correct specification of this cell types can create big defects in our visual perception.
 						</aside>
 					</section>
 
-
-					<section id="Mutants">
-						<h1 class="bluetitleL">CRISPR mutants: identify transcription factor that control cell identity</h1>
-						<div class="sl-block" data-block-type="image" style="width: auto; height: 90%; left: 20%; top: 120px;">
+					<section id="RetCellDiversity">
+						<h1 class="bluetitleL">How are retinal cells <u>subtypes</u> generated during development?</h1>
+						<div class="sl-block" data-block-type="media" style="width: 1600px; height: auto; left: 150px; top: 120px;">
 							<div class="sl-block-content">
-								<img style="plain" data-natural-width="" data-natural-height="" src="./resources/intro/CRtbx2aF0_5dpf_RU.png" data-lazy-loaded="" />
-
+								<object class="" style="width:100%;" data="./resources/intro/RetCellDiversity.svg" type="image/svg+xml"></object>
 							</div>
 						</div>
-						<aside class="notes">
-							I think that it's impossible to not be amazed by what our visual system is able to accomplish (work at day or night, high speed tracking, etc.) but as you look at how this is accomplished, you discover that it requires an immense number of different parts (ie cells) that have to be first specified and then wired into complex retinal circuits, and yet again, errors in the correct specification of this cell types can create big defects in our visual perception.
-						</aside>
+						<h1 class="reminder" style="background-color:rgba(0,0,0,0.88);">How is this controlled?</h1>
+					</section>
+
+
+					<section id="Mutants">
+						<h1 class="bluetitleL">CRISPR mutants: transcription factor that control photoreceptor identity</h1>
+						<h2 style="color:#B3B3B3; text-align:right; margin-right:5%">Carinna Householder</h2>
+						<div class="sl-block" data-block-type="image" style="width: 60%; height: auto; left: 2%; top: 120px;">
+							<div class="sl-block-content">
+								<img class="plain" src="./resources/intro/CRtbx2aF0_5dpf_RU.png" data-lazy-loaded="" />
+							</div>
+						</div>
+						<div class="sl-block fragment" data-block-type="image" style="width: auto; height: 78%; left: 60%; top: 20%;">
+							<div class="sl-block-content">
+								<img class="plain" src="./resources/intro/TF_Cones.png" data-lazy-loaded="" />
+							</div>
+						</div>
+					</section>
+
+					<section id="Mutants_HCs">
+						<h1 class="bluetitleL">CRISPR mutants: transcription factor that control horizontal-cell identity</h1>
+						<h2 style="color:#B3B3B3; text-align:right; margin-right:5%">Leah Kwak/Meghan Hnilo</h2>
+						<div class="sl-block" data-block-type="image" style="width: 45%; height: auto; left: 22%; top: 120px;">
+							<div class="sl-block-content">
+								<img class="plain" src="./resources/intro/F0lhx1a.png" data-lazy-loaded="" />
+							</div>
+						</div>
 					</section>
 
 					<section id="hcWiring">
 						<h1 class="bluetitleL">How are retinal cells <u>subtypes</u> properly wired?</h1>
 						<p class="citation"> <em>Dime con quien andas y te diré quien eres</em> </p>
-						<div class="sl-block" data-block-type="image" style="width: 54%; height: auto; left: 20%; top: 150px;">
+						<div class="sl-block" data-block-type="image" style="width: 54%; height: auto; left: 24%; top: 150px;">
 							<div class="sl-block-content">
 								<img class="plain" src="./resources/intro/zfHCs_ii.png" data-lazy-loaded="" />
 							</div>
 						</div>
-
-						<div data-block-type="text" style="width: 45%; height: auto; left: 55%; top: 40%;">
-
-						</div>
 					</section>
 
+					<section id="OKRa">
+						<h1 class="bluetitleR">OKR example</h1>
+						<div class="sl-block" data-block-type="text" style="text-align:left; font-size:100%">
+							<div class="sl-block" data-block-type="image" style="width: 1200px; height: auto; left: 100px; top: 10px;">
+								<!-- <video data-autoplay src="./resources/20200917_KKLM/OKRTrack_20200319_6dpf_uninjected_L05_01.mov"></video> -->
+								<img class="plain" style="width:300%; background:none" src="./resources/intro/zfOKRexample.gif">
+								<p class="citation">Optokinetic Reflex</p>
+							</div>
+					</section>
+
+					<section id="OKRb">
+						<h1 class="bluetitleR">OKR example</h1>
+						<div class="sl-block" data-block-type="text" style="text-align:left; font-size:100%">
+							<div class="sl-block" data-block-type="image" style="width: 1200px; height: auto; left: 100px; top: 10px;">
+								<video data-autoplay src="./resources/intro/OKRTrack_20200319_6dpf_uninjected_L05_01.mov"></video>
+								<!-- <img class="plain" style="width:300%; background:none" src="./resources/zfOKRexample.gif"> -->
+								<p class="citation">Optokinetic Reflex</p>
+							</div>
+					</section>
+
+					<section id="ptf1a">
+						<h1 class="bluetitleR">Light responses, <em>in vivo</em>  retina</h1>
+							<div class="sl-block" data-block-type="image" style="width: 770px; height: auto; left: 100px; top: 100px;">
+								<!-- <video data-autoplay src="./resources/20200917_KKLM/OKRTrack_20200319_6dpf_uninjected_L05_01.mov"></video> -->
+								<img class="plain" style="width:150%; background:none" src="./resources/intro/ptf1aExample.gif">
+							</div>
+							<div class="sl-block" data-block-type="image" style="width: 1480px; height: auto; left: 80px; top: 150px;">
+								<img class="plain" style="width:100%; background:none" src="./resources/intro/ptf1aExample.png">
+							</div>
+							<div class="sl-block" data-block-type="image" style="width: 360px; height: auto; left: 1540px; top: 400px;">
+								<p class="citationL">5 dpf</p>
+								<p class="citationL">ptf1a:<mark class="m">GCaMP6s</mark></p>
+								<p class="citationL">2P-imaging</p>
+
+							</div>
+					</section>
 
 				</div>
 			</div>
