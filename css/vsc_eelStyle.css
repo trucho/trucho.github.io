@@ -1,0 +1,37 @@
+h1 {
+  color: rgba(54,120,198,1);
+}
+h2 {
+  color: rgba(74,132,198,1);
+}
+h3 {
+  color: rgba(107,149,198,1);
+}
+h4 {
+  color: rgba(154,174,198,1);
+}
+
+.r {color: #747474;background: #00000000;}
+.u {color: #B540B7;background: #00000000;}
+.s {color: #4669F2;background: #00000000;}
+.m {color: #04CD22;background: #00000000;}
+.l {color: #CC2C2A;background: #00000000;}
+.k {color: #000000;background: #00000000;}
+.w {color: #ffffff;background: #00000000;}
+.magenta {color: #ff00ff;background: #00000000;}
+.orange {color: #ffa500;background: #00000000;}
+.cyan {color: #00ffff;background: #00000000;}
+.warn {color: #FF553E;background: #00000000;}
+
+
+span.r {color: #747474;background: #00000000;}
+  .u {color: #B540B7;background: #00000000;}
+  .s {color: #4669F2;background: #00000000;}
+  .m {color: #04CD22;background: #00000000;}
+  .l {color: #CC2C2A;background: #00000000;}
+  .k {color: #000000;background: #00000000;}
+  .w {color: #ffffff;background: #00000000;}
+  .magenta {color: #ff00ff;background: #00000000;}
+  .orange {color: #ffa500;background: #00000000;}
+  .cyan {color: #00ffff;background: #00000000;}
+  .warn {color: #FF553E;background: #00000000;}
